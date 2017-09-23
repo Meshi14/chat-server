@@ -1,0 +1,19 @@
+{
+  "name": "chat-server",
+  "version": "1.0.0",
+  "description": "Chat en tiempo real con video y gifs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Meshi14/chat-server.git"
+  },
+  "author": "Irvin Mendez <irvin.mendez2@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Meshi14/chat-server/issues"
+  },
+  "homepage": "https://github.com/Meshi14/chat-server#readme"
+}
