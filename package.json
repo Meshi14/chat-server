@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Meshi14/chat-server/issues"
   },
-  "homepage": "https://github.com/Meshi14/chat-server#readme"
+  "homepage": "https://github.com/Meshi14/chat-server#readme",
+  "dependencies": {
+    "st": "^1.2.0"
+  }
 }
