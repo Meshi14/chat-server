@@ -12,13 +12,14 @@ server.on('listening', onListening)
 server.listen(port)
 
 function onRequest(req, res){
-  let fileName = path.join(__dirname, 'public', 'index.html')
+  let index = path.join(__dirname, 'public', 'index.html')
+  let rs = fs.createReadStream(index)
 
-  fs.readFile(fileName, function (err, file){
-    if(err){
-      return res.end(err.message)
-    }
-    res.end(file)
+  res.setHeader('Content-Type', 'text/html')
+  rs.pipe(res)
+
+  rs.on('error', function (err){
+    res.end(err.message)
   })
 }
 
